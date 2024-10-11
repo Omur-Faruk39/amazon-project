@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+
+a, a:visited, a:hover, a:active {
+  all: unset;
+  color: white;
+}
+
+
+header {
+  display: flex;
+  background-color: #0f1111;
+  height: 60px;
+  padding: 0 13px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.pc-logo {
+  width: 6.1rem;
+}
+
+div > .logo {
+  cursor: pointer;
+  padding: 12px 5px 5px 5px;
+  margin-right: 25px;
+  display: block;
+  border-radius: 1px;
+}
+
+.logo:hover {
+  outline: solid 1px white;
+}
+
+div:nth-child(2) {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  border-radius: 4px 0 0 4px;
+  max-width: 650px;
+  flex-grow: 1;
+  padding: 0 15px;
+  font-size: 17px;
+  min-width: 0;
+  height: 40px;
+}
+
+input:focus {
+  outline: none;
+}
+
+div .search-icon {
+  flex-grow: 0;
+  background-color: rgb(254, 189, 105);
+  width: 3rem;
+  border-radius: 0 4px 4px 0;
+  transition: transform 0.11s;
+
+}
+
+.search-icon > img {
+  height: 1.5rem;
+  margin: auto;
+}
+
+.search-icon:hover {
+  background-color: rgb(216, 148, 59);
+}
+
+.search-icon:active {
+  transform: scale(1.1);
+}
+
+.right-side-div {
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+div > .orders-a {
+  width: 56px;
+  border-radius: 1px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.orders-a:hover {
+  outline: solid 1px white;
+}
+
+
+.right-side-div span {
+  font-weight: bolder;
+}
+
+div .cart-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  padding: 11px 10px;
+}
+
+.cart-a > p {
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cart-image-div {
+  position: relative;
+  display: flex;
+}
+.cart-image-div > p {
+  position: absolute;
+  color: rgb(253, 157, 30);
+  font-weight: bolder;
+  top: -3px;
+  left: 19px;
+}
+
+.cart-image-div img {
+  height: 1.8rem;
+}
+
+.cart-a:hover {
+  outline: solid 1px white;
+}
