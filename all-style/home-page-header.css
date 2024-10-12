@@ -41,7 +41,7 @@ div > .logo {
   outline: solid 1px white;
 }
 
-div:nth-child(2) {
+.middle-section {
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -63,6 +63,7 @@ input:focus {
 }
 
 div .search-icon {
+  display: flex;
   flex-grow: 0;
   background-color: rgb(254, 189, 105);
   width: 3rem;
