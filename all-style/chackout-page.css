@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+
+header {
+  display: block;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  height: 60px;
+  padding: 0 20px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.pc-logo {
+  width: 6.1rem;
+  margin-top: 15px;
+}
+
+.middle-para {
+  font-size: 25px;
+  text-align: center;
+  width: 230px;
+}
+
+.middle-para > a {
+  text-decoration: none;
+}
+
+.right-side > img {
+  margin-top: 8px;
+}
