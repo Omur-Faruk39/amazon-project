@@ -148,10 +148,6 @@ label > p > span {
   color: rgb(120, 120, 120);
 }
 
-
-
-
-
 .payment-summary-row {
   display: grid;
   grid-template-columns: 1fr auto;
