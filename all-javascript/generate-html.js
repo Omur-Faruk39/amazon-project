@@ -4,9 +4,8 @@ import { cart } from "./cart.js";
 const mainTag = document.querySelector('main');
 const cartElm = document.querySelector('.cart-image-div > p');
 
-const cartCounter = () => {
-  cartElm.innerHTML = cart.length;
-};
+
+const cartCounter = () => { cartElm.innerHTML = cart.length; };
 
 const renderProducts = () => {
   products.forEach(product => {
@@ -51,12 +50,13 @@ const renderProducts = () => {
       </div>`;
   });
 
-document.querySelectorAll('.js-add-btn').forEach(btn => {
+  document.querySelectorAll('.js-add-btn').forEach(btn => {
     btn.addEventListener("click", () => {
       const select = btn.closest('.product-container').querySelector('.js-quantity');
       if (Number(select.value) + cart.length < 10) {
-        for (let i = 0; i < select.value;i++) {
+        for (let i = 0; i < select.value; i++) {
           cart.push(btn.value);
+          localStorage.setItem("cartId", JSON.stringify(cart));
         }
       } else {
         alert('Cart is out of range')
