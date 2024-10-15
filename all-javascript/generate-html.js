@@ -1,5 +1,7 @@
 import { products } from "../data/products.js";
-import { cart } from "./cart.js";
+import { cart, itemSetLocal } from "./cart.js";
+
+export let a = 5;
 
 const mainTag = document.querySelector('main');
 const cartElm = document.querySelector('.cart-image-div > p');
@@ -56,7 +58,7 @@ const renderProducts = () => {
       if (Number(select.value) + cart.length < 10) {
         for (let i = 0; i < select.value; i++) {
           cart.push(btn.value);
-          localStorage.setItem("cartId", JSON.stringify(cart));
+          itemSetLocal();
         }
       } else {
         alert('Cart is out of range')
