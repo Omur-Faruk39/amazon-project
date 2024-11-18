@@ -47,7 +47,7 @@
   display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 600px) {
   .amazon-logo {
     display: none;
   }
